@@ -1,0 +1,33 @@
+Hi Daniel & Fuda,
+
+It is fantastic! Light curves are ready! I attach them to the mail. If you 
+have no more the lightcurve we used for the paper, you can find it by 
+using the PATHOS webpage https://archive.stsci.edu/hlsp/pathos
+
+Each light curve is in the same format used for the old one: 
+col 1: BTJD (BJD-2457000.0)
+col 2: it is the barycentric correction already applied to the col 1, 
+anyway in this case is zero because I had no time to extract this 
+(useless) information
+col 3: is the PSF-fitting RAW photometry flux
+col 4: is col 3, CORRECTED for CBV
+col 5: is the 1-px aperture photometry RAW flux
+col 6: is the 1-px aperture photometry CORRECTED flux 
+... and so on for col 7-12 for 2-px, 3-px, 4-px aperture photometry
+col 13 is the local sky background
+col 14 and 15 are the X/Y positions on the CCD
+col 16 is the DQUALITY flag. The good points have DQUALITY==0
+
+As done for the first work, the best photometries are the PSF-fitting and 
+the 1-px photometry. Remember to normalize the flux to its median/mean and 
+to use the corrected photometries (so, cols 3 or 5).
+Some tips to "clean" the light curve: exclude for sure all the points with 
+DQUALITY>0. Then, I usually do a cut on the background, excluding all the 
+points with sky>mean_sky+4sigma and all the points with sky>200 or 250 e/s 
+(it depends on how faint is the star...maybe in this case it's better 200 
+as threshold) . That's all. Let me know if something is not clear.
+
+Last info: light curves are both in ascii and fits formats. In their 
+headers you can find any information on the observations and on the star. 
+The file name contains itself information on the sector (36 or 37), tic 
+number, etc.
