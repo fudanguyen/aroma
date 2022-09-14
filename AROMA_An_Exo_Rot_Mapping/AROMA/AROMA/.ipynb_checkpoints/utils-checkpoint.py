@@ -12,7 +12,7 @@ def powerfunc_six(hpp,amp1,shift1,amp2,shift2,amp3,shift3,amp4,shift4,amp5,shift
     shifted5=amp5*shift(sinepw,shift5)
     shifted6=amp6*shift(sinepw,shift6)
     return shifted1+shifted2+shifted3+shifted4+shifted5+shifted6
-print('def: powerfunc_six(hpp,amp1,shift1,amp2,shift2,amp3,shift3,amp4,shift4,amp5,shift5,amp6,shift6))
+print('def: powerfunc_six(hpp,amp1,shift1,amp2,shift2,amp3,shift3,amp4,shift4,amp5,shift5,amp6,shift6)')
 
 def powerfunc_four(hpp,amp1,shift1,amp2,shift2,amp3,shift3,amp4,shift4):
     shifted1=amp1*shift(sinepw,shift1)
