@@ -1,5 +1,4 @@
 # config.py
-
 from pathlib import Path  # pathlib is seriously awesome!
 
 data_dir = Path('~/Documents/GitHub/aroma/AROMA_An_Exo_Rot_Mapping/data/')
