@@ -1,0 +1,16 @@
+name: lightcurve-multisine
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      - astropy==7.0.1
+      - hyperopt==0.2.7
+      - ipython==8.12.3
+      - matplotlib==3.10.0
+      - numpy==2.2.3
+      - pandas==2.2.3
+      - scikit_learn==1.6.1
+      - scipy==1.15.2

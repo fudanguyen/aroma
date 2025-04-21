@@ -1,0 +1,6 @@
+astropy==7.0.1
+matplotlib==3.10.0
+numpy==2.2.3
+pandas==2.2.3
+PyAstronomy==0.22.0
+scipy==1.15.2
